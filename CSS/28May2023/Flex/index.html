@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS|20</title>
+    <style>
+       /* // jabhi flex properties apply karni ho toh pahile parent to target karte hai.box
+        //below code main parent container so, main container target kar raha hun.*/
+
+        .container
+        {
+            /* here by default parent element(like container) takes as block-level element. */
+            /* display:flex;
+            border : 1px solid red; */
+
+            /* here by default parent element(like container) takes as block-level element. but we want to acheive that as inline-level element so we use display value as inline-flex.*/
+            height:160px;
+
+            display: flex;
+            border:2px solid black;
+
+            /* flex-direction 
+
+            i) flex-direction: row;--> by default direction (Here no changes as it as by default).
+
+            ii) flex-direction:row-reverse;-->content in row-flex is reversed so fist will be last of row and last will be first of row
+
+            iii) flex-direction: column;-->content in flex is arranged in column manner. 
+
+            iv) flex-direction : column-reverse;--> content in column-flex is reversed so first column-flex element go to last and last comes to first.
+
+            */
+
+            flex-direction: row;
+
+            /* flex-wrap 
+
+            i)flex-wrap:wrap;-->it gives wrapping of content facility only: .;
+
+            ii)flex-wrap:nowrap;-->here content adjust in row without wrpping it: .;
+
+            iii)flex-wrap:wrap-reverse;--> this simply it perform wrapping and then it reverse the content which is wrap.
+
+            */
+
+            /* flex-wrap:nowrap; */
+
+            /*justify-content : value;
+
+            // justify-content works in main axixs/x-axis /left-->right.
+
+            i)justify-content:center;-->here the content in the flexbox place at center of flexbox.
+
+            ii)justify-content:baseline;-->here the content is place where we start it.
+
+            iii)justify-content: end;--->all content is place at the end of the flexbox.
+
+            iv)justify-content : start;-->all content is place at starting of the flexbox.
+
+            v)justify-content : space-around;-->spaccing is do to all element from all sides.here spacing do stat and also at end.
+
+            vi)justify-content : space-between;--> spaccing is do in between element not spacing at start and end.
+
+            vii)justify-content: space-evenly;-->here space is divided equally in between all elements.
+
+            */
+
+            /* justify-content:space-evenly; */
+
+          
+            /* align-items:value; 
+
+            // align-items works in cross axis/top-->bottom/y-axis.
+
+            align-items: strech; (it can streth the height/width of the element in container or flex-box)
+
+            align-items:start ;( in flex box align items:start is aligned to flex box elemnt at the top of the cross axis/y-axis/top-->bottom.)
+
+            align-item:end;(flex box aligned at bottom of cross axis/y-axis)
+
+            align-item:center; (flex box aligned at center of cross axis)
+            
+            */
+
+            /* align-items: start; */
+
+            /* gap:value; 
+
+            i)gap:10px; here 10px is apply in between elements of flexbox in rows as well as column.
+
+            ii)row-gap:10px here 10px is apply in between elements of flexbox in rows only.
+
+            iii)column-gap:10px here 10px apply in  between elements of flexbox in column only.
+            */
+
+            /* row-gap:10px; */
+
+            /* I have doubt in rowgap */
+
+          
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+        .box{
+            height: 100px;
+            width:100px;
+        }
+
+        .box1{
+            background-color: red;
+        }
+
+        .box2{
+            background-color: yellow;
+        }
+
+        .box3{
+            background-color: green;
+        }
+    </style>
+        
+</head>
+<body>
+        <!-- flex -->
+
+        <div class="container">
+            <div class="box box1">box1</div>
+            <div class="box box2">box2</div>
+            <div class="box box3">box3</div>
+            <div class="box box1">box1</div>
+            <div class="box box2">box2</div>
+            <div class="box box3">box3</div>
+        </div>
+
+</body>
+</html>

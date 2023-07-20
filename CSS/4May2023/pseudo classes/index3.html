@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | 14</title>
+    <style>
+      
+        /* Where the cursor is on the screen or when the cursor is goes on that part how is react that hover property */
+
+        /* real use case of the over is on button and links most of the time. */
+
+        /* Here we can use selector as elements, classes , id's and each every selector we use here to select the element. */
+        
+        /* In following example we use the hover property by using element selector
+        p (paragraph). */
+        /* p:hover{
+            background-color:pink;
+            color:white;
+        } */
+
+        /* In Below code we use the selector as class to apply hover property on the which element have that class. */
+
+        /* .hover:hover{
+            background-color: black;
+            color:white;
+        } */
+
+        /* Focus Pseudo Classes */
+        /* Jab bhi aap dhyan de tab konse - knose badlav hone chahiye use kahate hai focus */
+
+        /* real use case of focus is Input tag */
+
+        /* We use this focus in input tag most of time because the contantly means when user is uses the input field they have focus on the field upto time that is not completed. So use the focus here to focus the input file */
+
+        /* input:focus{
+            color:red;
+            background-color: black;
+            font-size: 25px;
+        } */
+
+        /* by using hover on anchor tag as we put cursor on the link part that part will be apply hover. */
+        /* a:hover{
+            color:pink;
+        } */
+
+        /* By using active on anchor tag (link part) as click on that link that link will be activated after that we want to some change on the part of link (eg color,etc) we use the active pseudoclass. */
+
+        /* In following example when the link will click activate that link and change the color of that link. link color will be changes into violet. */
+
+        /* property changes at the time of the click  */
+
+        /* a:active{
+            color:rgba(54, 186, 186, 0.824);
+        } */
+
+        /* Visited Pseudo Class */
+        /* This is mostly used on link or anchor tag . To change the things or properties of that link after the visiting of that link at least one time. */
+
+        /* In below example the color of the link will be changes into the black color. */
+
+        /* ek bar visit kiya toh visited ki priority highest ban jati hai aur uski sari properties only rahati hai on that visited link. */
+
+        /* a:visited{
+            color:black;
+        } */
+
+        /* First Child pseudo Class */
+
+        /* Here the anchor tag first child jo hai uska color yellow ho jana chahiye. */
+
+        /* By using first child pesudo class we apply the CSS on to the first child for that particular element(for example link,anchor tag) */
+
+        /* a:first-child{
+            background-color:yellow;
+        } */
+
+        /* nth-child() Pseudo Class */
+
+        /* In this pesudo class we as put no in () bracket then that no th child will be changes as per nth-child is defined. */
+
+        /* for example we put 1 in that bracket then first child of that element changes as per defined the nth-child. */
+
+        /* and Above nth-child will be we write experssion in that bracket for example 2n+1 ,n ,n+1 than that definition of nth-child will be apply on multiple of result of experssion on that no. of element that definition is apply. */
+
+        /* as we use even or odd in that bracket then in even no. and odd no. on that element child this CSS Will be apply  */
+
+        /* for write the number in brackets */
+
+        /* a:nth-child(2){
+            background-color: pink;
+        } */
+
+        /* for write the expression if use 2n+1 where n=0,1,2,.. by solving the series is got 1,3,5,... The child whose no in that series on that child apply the CSS. */
+
+        /* a:nth-child(2n+1){
+            background-color: green;
+        } */
+
+        /* we use the odd or even in that bracket when use odd there on odd child that CSS will apply if we use even then there on even child that CSS will apply. */
+
+        /* a:nth-child(even){
+            background-color:orange;
+        }
+
+        a:nth-child(odd){
+            background-color: aqua;
+        } */
+
+        /* Pseudo Elements */
+
+        /* CSS allows developers to reate special types of selectors called Pseudo-elements, which can be used to style specific parts of html element. */
+
+        /* Some of the Pseudo-elements are:
+        
+       
+        I) ::first-line
+        II) :: first-letter;
+        III) :: after
+        IV) ::before
+        V) :: marker
+        vI) :: ::selection */
+
+        /* I) ::first-line */
+
+        /* To apply CSS on first line of the element we use that ::first-line pseudo element . following example explains the above pesudo element.*/
+       
+        /* p::first-line{
+            color:red;
+        } */
+
+
+        /* I) ::first-letter */
+
+        /* To apply CSS on first Letter of the element we use that ::first-letter pseudo element . following example explains the above pesudo element.*/
+
+        /* p::first-letter{
+            color:green;
+        } */
+        
+        /* III)::after */
+
+        /* In there are we have pass some message/content after the element in html then we use that ::after by using it we add our content after the element 
+
+        There are two properties in which content and color 
+
+        content values is which text is dispaly after the element.  
+
+        color is in which color content is disaply. */
+        
+        /* p::after{
+            content: "-sainath Wankhede";   
+            color:orange;
+        } */
+    
+    
+    /* III)::before */
+    
+    /* In there are we have pass some message/content before the element in html then we use that ::before by using it we add our content after the element 
+    
+    There are two properties in which content and color 
+    
+        content values is which text is dispaly before the element.  
+        
+        color is in which color content is disaply. */
+        
+        /* p::before{
+            content: "-sainath Wankhede";   
+            color:rgb(20, 227, 58);
+        } */
+        
+
+        /* IV) ::selection */
+
+        /* Jo humne selection main likha hua hai woh humain tab tak dekhne ko nahi milega jab tak hum usko select nahi karte ye hota hai selection . by practically that will be clear the use */
+
+        /* Here hum jab text select karenge tab woh background color black and color of selected content yellow dikhayega. */
+
+        /* p::selection{
+            background-color: black;
+            color:yellow;
+        } */
+
+            /* VI) ::marker */
+
+        /* The ::marker CSS pseudo-element selects the marker box of a list item, which typically contains a bullet or number. It works on any element or pseudo-element set to display: list-item, such as the <li> and <summary> elements. */
+
+        /* Here in ::marker there are two fields that content and font-size there are content place the type of list for eg "*","&","$" and etc. 
+        
+        and another one is font size that is of the type list symbol. that it 
+        
+        after that applying the type of given list will be changes.*/
+
+
+/* 
+        .list li::marker{
+            content : "*";
+            font-size: 10px;
+        } */
+    
+
+
+
+
+        </style>
+</head>
+<body>
+    
+    <!-- Pseudo Classes -->
+
+    <!-- Sabse important use case Button and Anchor tag ke uper. -->
+    
+    <!-- <p class="hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quibusdam!</p>
+    <hr>
+    
+    <input type="text"> -->
+    
+    <!-- Here no any anchor tag is first child below both anchor tags are parent classes -->
+    
+    <!-- so we can not apply first child pseudo class on below anchor tags so we are make it first child class -->
+
+    <!-- <a href="https://www.google.com/">Google</a>
+
+    <a href="https://www.google.com/">Google</a> -->
+    
+    <!-- <nav>
+        <a href="https://www.google.com/">Google</a>
+    
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google</a>
+    
+        <a href="https://www.google.com/">Google</a>
+        
+        <a href="https://www.google.com/">Google</a
+            >
+    </nav>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat cumque, suscipit quidem facere obcaecati qui magni alias id, sequi beatae a quasi animi molestiae delectus aut dolorum cupiditate voluptatibus in, vero nihil? Sit ducimus molestiae, dolorum laudantium ex soluta quod voluptas ullam nulla vero at illo aspernatur dignissimos eligendi.</p>
+
+    <ul type="disc" class="list" >
+        <li >India</li>
+        <li>china</li>
+        <li>America</li>
+        <li>Bhutan</li>
+    </ul> -->
+
+</body>
+</html>

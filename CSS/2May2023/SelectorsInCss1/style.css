@@ -1,0 +1,79 @@
+/* body{
+    background-color: rgb(225, 215, 215);
+} */
+
+/* universal selector */
+
+/* universal selector is used to style whole html page. and it is denoted by (*). */
+
+/* By default Body (chrome/client engine) kuch na kuch margin or padding  deta hai if you want to overrite that you need use to the universal selector (*). */
+
+/* *{
+   margin :0;
+   padding:0; 
+} */
+
+/* Element Selector */
+
+/* In Element Selector we use selector as the name of the element to apply CSS on that particular element. */
+
+/* For Ex : You want to apply CSS on Heading of the html you will be use selector as h1,..,h6. */
+ /* Or you want to apply CSS on Paragraph of the html you will be use selectors as p, as following following code explain following code. */
+
+ /* h1{
+    color : green;
+ }
+ p{
+    color:red
+ } */
+
+
+ /* class Selectors */
+
+ /* In this class is an attribute of the element on which you want to apply css */
+
+ /* Here we select class of the element to apply css without selecting that element. */
+
+ /* We can declare the same class to multiple element to apply Same Css Style on multiple element. */
+
+ /* Here Css Class selectors are denoted by (.). */
+
+ /* .pra{
+    color:rgb(255, 0, 0);
+    
+ }
+
+ .hello{
+    font-size: 60px;
+ } */
+
+ /* Id Selector */
+
+ /* In Id selector we can declare the Id attribute to the unique element and we select that element by unique id to apply CSS Style on that particular element. */
+
+ /* Id Selector are denoted by (#). */ 
+
+ /* #id1{
+
+    color : whitesmoke;
+    background-color: black;
+ } */
+
+ /* Selector List */
+
+ /* if you wont to apply the CSS Style we write single CSS for the multiple selector as like multiple classes , multiple ids, multiple element at time we just sepeate each by comma(,) */
+
+ /* following code explain the Selector List Concept */
+
+ /* .class1, .class2, .class3{
+   color: rgb(54, 153, 60)
+   ;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ } */
+
+
+
+
+
+
+

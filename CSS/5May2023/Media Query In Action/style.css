@@ -1,0 +1,76 @@
+body{
+    background-color: red;
+}
+
+div{
+    font-size:x-large;
+    text-align:center;
+}
+
+div::after{
+    content:'welcome to the demo'
+}
+
+@media(max-width:400px){
+    /*
+    If viewport is atmost 400px then this style will apply.
+    */
+    body{
+        background-color: white;
+    }
+
+    div::after{
+        content:'Very small'
+    }
+}
+
+
+@media (400px<=width<= 768px){
+    body{
+        background-color: yellowgreen;
+    }
+
+    div::after{
+        content:'Mid Portion.'
+    }
+}
+/* @media(min-width:400px) and (max-width:768px){
+    body{
+        background-color: yellowgreen;
+    }
+
+    div::after{
+        content:'Mid Portion.'
+    }
+} */
+
+
+
+
+@media(min-width:768px)and (max-width:900px){
+    /*
+    If viewport is atleast 768px then this style will apply*/
+    
+
+    body{
+        background-color:purple;
+    }
+
+    div::after{
+        content:'Smaller Screens'
+    }
+}
+@media(min-width:900px){
+    /*
+    If viewport is atleast 900px then this style will apply*/
+    
+
+    body{
+        background-color:aquamarine;
+    }
+
+    div::after{
+        content:'Woah its working.'
+    }
+}
+

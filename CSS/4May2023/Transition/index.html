@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | 16</title>
+    <style>
+
+        /* To apply transition following syntax is follow : */
+
+        /* Transition(keyword): kyaHoneWalaHai KaiseChangeKarnaHai; */
+
+        /* transition main us property ko likthe hai ki hume un property ke upar changes karvana ho jaise ki height , width etc. and use property ke baad kitna time dena chahate ho us property ko apply hone ke liye woh dijiye. */
+
+        div{
+            height:100px;
+            width:100px;
+            background-color: black;
+            transition: width 2s,height 3s, background-color 5s;
+
+            transition-timing-function: ease-out;
+
+            transition-delay : 1s;
+
+            /* Here Transition timming fucntion is used to achieve differneces in speed of smoothness in changes of the properties. */
+
+            /* There are four values of transition timming function in that ease is default property ease meanse dheere: 
+
+            I)ease-in(dheere-tej)
+
+            II)ease-out(dheere-dheere)
+
+            III)ease-in-out(dheere-tej-dheere) */
+
+            /* transition-timing-function: ease-in; */
+
+            /* transition-timing-function:ease-in-out; */
+
+            /* transition-timing-function:ease-out; */
+
+            /* you can declear time in seconds, aswellas ms(miliseconds) */
+
+            /* Transition-dealy */
+
+            /* Transition delay hum use karte hai jub hum kisi chiz pe cursor leke jate hai tab jo humne delay diya hai uske baad uspe transition apply hona start hoga. */
+
+            /* for exmaple following code will explain the Trasition-delay. */
+        }
+
+        /* fadu syntax for transition:
+
+        transition:property1 timeframe1, property2 timeframe2 ...and so on. */
+
+        /* jab koi chiz pe hover kare toh uspe kya changes ho ye hum div:hover main decleare karte hai */
+
+        div:hover{
+            width:200px;
+            height:500px;
+            background-color: red;
+        }
+
+     
+
+        
+    </style>
+</head>
+<body>
+    <!-- Transition -->
+    <div class="like"></div>
+<!-- 
+    /* Tool Tip */
+
+    /* Usually tool tip images,Anchor tag etc. pe dete hai */
+
+    /* title jab likhte hai aur uspe jab bhi cursor leke jate hai toh ek pop up aata hai use hum tool tip kahah te hai. */
+
+    /* following code will be explain the how to use tool tip works */ -->
+
+    <p title="paragraph">Lorem, ipsum dolor.</p>
+
+
+</body>
+</html>

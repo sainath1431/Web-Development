@@ -1,0 +1,78 @@
+/* body{
+    background-color: black;
+} */
+
+/* Descendent Selectors */
+
+/* Descendent selectors are those selectors ek chiz ke andhar duri chiz hai toh woh usko target karega Agar aisa nahi hoga toh woh target nahi karega. for exmaple next code explain the Descendant Selector */
+
+/* main p {
+    color : red;
+
+} */
+
+/* In above code main p  is Desecent selector if in html page occurs inside the main element any p tag then they apply above the CSS to the paragraph. */
+
+/* child Selector */
+
+/* child selector as same as the descendant selector */
+
+/* in Child Selector we write selector as :
+
+parent element > child element {} */
+
+/* it menas parent element ke andaar child kon hai us ko select karo */
+
+/* below code explain child selector */
+
+/* h1>p{
+    color:blue;
+} */
+
+/* Above code say that h1 ke andaar paragraph hai usko select karo and uspe CSS apply karo  */
+
+/* Adjacent Sibling selector */
+
+/* <!-- Adjacent sibling selector denoted by (section+p) this adjacent sibling selector work as section ke adjacent wale paragraph element ko select karo and CSS apply karo. --> */
+
+/* child Sibling Selector denoted by (section>p) this child selector works as section cha child paragraph p asel tar tyala select kara ani tychya var CSS apply kara. */
+
+/* 
+main>p{
+    color:yellow;
+} */
+
+
+/* section+p{
+    color:red;
+} */
+
+/* General Sibling Selector  */
+
+/* <!-- In General Sibling Selector denoted by (section~p). this selector of say that section ke aas paas koi bhi p tag hoga toh use select karo aur CSS apply karo. --> */
+
+/* !-- In General Sibling Selector denoted by (section~p). this selector of say that section ke aas paas koi bhi p tag hoga toh use select karo aur CSS apply karo. --> */
+
+/* Selects every <ul> element that is preceded by a <p> element */
+
+/* section~p{
+    color:red;
+} */
+
+/* Attribute Selector */
+
+/*
+In this selector we are target to where the target = 
+ "_blank" this attribute is write. */
+
+/* [target="_blank"]{
+    color:pink;
+    text-decoration: none;
+} */
+
+
+/* In this selector we are target to where the alt="pW" attribute present in img element and if that image is not load by any reason then at that time this below css will be apply using selector as [alt~="pW"]. */
+
+/* [ alt~="pW"]{
+    background-color: black;
+} */

@@ -1,0 +1,77 @@
+@media(max-width:600px){    /* upto 0px-600px */
+    /*
+    phones
+    */
+    body{
+        background-color: red;
+    }
+    
+    div::after{
+        content:'Phones';
+    }
+}
+
+div{
+    text-align: center;
+    font-size: x-large;
+    color:black;
+}
+
+@media(600px<=width<=768px){  /* In range 600px-768px */
+    /*
+    and we write the above condition is the form of constraits also.
+    
+    portrait tablets, big phones
+    */
+    body{
+        background-color: aquamarine;
+    }
+
+    div::after{
+        content: 'portrait tablets and big phones.';
+    }
+
+
+}
+
+@media(min-width:768px){   /*In range 768px-992px*/
+    /*
+    tablets
+    */
+
+    body{
+        background-color:blue;
+    }
+
+    div::after{
+        content:'Tablets';
+    }
+}
+
+@media(min-width:992px){    /*In range 992px-1200px*/
+    /*
+    laptops
+    */
+    body{
+        background-color: yellowgreen;
+    }
+
+    div::after{
+        content:'laptops'
+    }
+
+@media(min-width:1200px){   /*Beyond 1200px*/
+    This is for larger Screens.
+    */
+
+    body{
+        background-color: orange;
+    }
+
+    div::after{
+        content:'Larger Screens.'
+    }
+}
+
+}
+

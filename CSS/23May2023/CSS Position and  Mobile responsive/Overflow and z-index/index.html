@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | 19 |</title>
+    <style>
+        p{
+            height:250px;
+            width:250px;
+            border:2px solid red;
+            /* overflow : hidden;
+            here the content of paragraph goes the outside the boudnary area as height 250px and width 250px then  the overflow content is hide. */
+
+            /* overflow : scroll; */
+            
+            /* If we used the scroll property then the content which is outside the boudary area is seen by scrooling that paragraph.
+            
+            When we the Scroll value then some browser are show everytime the scroll bar. and some browser are not.*/
+
+            /* overflow : auto; */
+
+            /* When we the scroll value then there are scroll bar is seen when the scroll of the content is doing. */
+
+
+        }
+
+        .one{
+            height:50px;
+            width:50px;
+            background-color: red;
+            position:absolute;
+            top:0;
+            z-index:-1;
+        }
+        .two{
+            height:50px;
+            width:50px;
+            background-color: yellow;
+            position:absolute;
+            top:0;
+            z-index:2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Overflow -->
+
+    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium quidem quam nobis ipsum voluptas nam consectetur, fuga at dignissimos, blanditiis mollitia, quasi necessitatibus numquam ducimus illum ullam asperiores adipisci delectus tempora recusandae minus? Nulla vel officiis odit praesentium amet, tenetur sunt ratione veniam iusto at repudiandae eius. Ipsum officiis odio repellat perferendis tempore quam asperiores aliquam voluptates ullam officia reprehenderit fuga nobis labore temporibus, numquam obcaecati repudiandae reiciendis deleniti perspiciatis soluta. Hic nemo voluptate, quibusdam quam omnis, velit quia accusantium eligendi dolores in iusto, praesentium tempore inventore reprehenderit fugiat sed! Obcaecati culpa labore aut necessitatibus ad voluptatum impedit est cum?</p> -->
+
+    <!-- Z-index -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, iure.</p>
+
+    <div class="one"></div>
+    <div class="two"></div>
+</body>
+</html>
