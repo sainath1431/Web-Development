@@ -1,0 +1,34 @@
+*{
+    margin:0px;
+    padding: 0px;
+
+    background-color: rgb(220, 218, 218);
+}
+
+main{
+    background-color:rgb(210, 216, 214);
+}
+
+h1{
+   background-color: pink;
+}
+
+.para{
+    background-color:blueviolet;
+}
+
+#Intro{
+    color:brown;
+    background-color: grey;
+
+}
+
+.para1,.para2,.para3,.para4,.para5{
+    color : red;
+    text-decoration-color: ;
+}
+
+
+
+
+
